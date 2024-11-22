@@ -29,6 +29,7 @@ main {
   overflow-y: auto;
   max-height: calc(100vh - 150px); /* Ajusta para que no ocupe más espacio del permitido */
   justify-items: center;
+  box-sizing: content-box;
 }
 
 .card {
@@ -39,6 +40,7 @@ main {
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: content-box;
 }
 
 .card img {
