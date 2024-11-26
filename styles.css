@@ -5,20 +5,25 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  background-color: #f4f4f9;
+  background-color: #ffee93;
 }
 
 nav {
-  background-color: white;
+  background-color: #adf7b6;
   color: black;
   text-align: center;
   padding: 1rem;
-  border-bottom: 2px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #dddddd;
+  box-shadow: 0 4px 6px rgba(190, 235, 134, 0.1);
+}
+
+nav h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
 }
 
 main {
@@ -34,7 +39,7 @@ main {
 
 .card {
   width: 450px;
-  background-color: white;
+  background-color: #fcf5c7;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
@@ -51,19 +56,34 @@ main {
   margin-bottom: 1rem;
 }
 
+.card p {
+  font-weight: 300;
+  font-size: .75rem;
+}
+
 footer {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #e4e4e7;
+  background-color: #ffc09f;
   padding: 0.5rem 1rem;
   justify-content: center;
+  backdrop-filter: blur(4px);
+  opacity: 50%;
 }
 
 footer a {
   margin-left: 0.5rem;
   color: #6c63ff;
   text-decoration: none;
+}
+footer p{
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 400;
+  filter: inherit;
+  z-index: 5;
 }
 
 footer a:hover {
